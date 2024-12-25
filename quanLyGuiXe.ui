@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1700</width>
+    <height>950</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>10</y>
+      <width>1601</width>
+      <height>891</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout" stretch="1,12">
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <layout class="QHBoxLayout" name="horizontal_dieuHuong">
+       <item>
+        <widget class="QGroupBox" name="groupBox_10">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="title">
+          <string>Điều hướng</string>
+         </property>
+         <widget class="QPushButton" name="btn_dangKy">
+          <property name="geometry">
+           <rect>
+            <x>320</x>
+            <y>10</y>
+            <width>151</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>151</width>
+            <height>41</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>120</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Đăng ký gửi xe</string>
+          </property>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0,0,0">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QGroupBox" name="groupBox">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="title">
+            <string>Camera quét mã QR</string>
+           </property>
+           <widget class="QLabel" name="label_khungCamQR">
+            <property name="geometry">
+             <rect>
+              <x>80</x>
+              <y>20</y>
+              <width>331</width>
+              <height>251</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="lineWidth">
+             <number>2</number>
+            </property>
+            <property name="text">
+             <string>khung hiển thị</string>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_2">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="title">
+            <string>Thông tin ảnh đăng ký</string>
+           </property>
+           <widget class="QLabel" name="label_anhNguoiDK">
+            <property name="geometry">
+             <rect>
+              <x>40</x>
+              <y>40</y>
+              <width>220</width>
+              <height>200</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap>../Users/Dell/Desktop/person2.jpg</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_anhXe">
+            <property name="geometry">
+             <rect>
+              <x>280</x>
+              <y>40</y>
+              <width>220</width>
+              <height>200</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap>../Users/Dell/Desktop/moto.jpg</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_3">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="title">
+            <string>Xử lý</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QGroupBox" name="groupBox_4">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="title">
+            <string>Ảnh phía trước xe lúc vào</string>
+           </property>
+           <widget class="QLabel" name="label_anhTruocXeVao">
+            <property name="geometry">
+             <rect>
+              <x>100</x>
+              <y>20</y>
+              <width>331</width>
+              <height>251</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_5">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="title">
+            <string>Ảnh phía sau xe lúc vào</string>
+           </property>
+           <widget class="QLabel" name="label_anhSauXeVao">
+            <property name="geometry">
+             <rect>
+              <x>100</x>
+              <y>20</y>
+              <width>331</width>
+              <height>251</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_6">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="title">
+            <string>Thông tin gửi xe</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+           <widget class="QWidget" name="formLayoutWidget">
+            <property name="geometry">
+             <rect>
+              <x>100</x>
+              <y>20</y>
+              <width>331</width>
+              <height>233</height>
+             </rect>
+            </property>
+            <layout class="QFormLayout" name="formLayout">
+             <item row="0" column="0">
+              <widget class="QLabel" name="biNSLabel">
+               <property name="text">
+                <string>Biển số</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="input_bienSo">
+               <property name="maximumSize">
+                <size>
+                 <width>260</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="hTNLabel">
+               <property name="text">
+                <string>Họ tên</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="input_hoTen">
+               <property name="maximumSize">
+                <size>
+                 <width>260</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="loIXeLabel">
+               <property name="text">
+                <string>Loại xe</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLineEdit" name="input_loaiXe">
+               <property name="maximumSize">
+                <size>
+                 <width>260</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="mUXeLabel">
+               <property name="text">
+                <string>Màu xe</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QLineEdit" name="input_mauXe">
+               <property name="maximumSize">
+                <size>
+                 <width>260</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QLabel" name="giVOLabel">
+               <property name="text">
+                <string>Giờ vào</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="1">
+              <widget class="QLineEdit" name="input_gioVao">
+               <property name="maximumSize">
+                <size>
+                 <width>260</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="0">
+              <widget class="QLabel" name="giRaLabel">
+               <property name="text">
+                <string>Giờ ra</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="1">
+              <widget class="QLineEdit" name="input_gioRa">
+               <property name="maximumSize">
+                <size>
+                 <width>260</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="0">
+              <widget class="QLabel" name="label_2">
+               <property name="text">
+                <string>MSSV</string>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="1">
+              <widget class="QLineEdit" name="input_MSSV">
+               <property name="maximumSize">
+                <size>
+                 <width>260</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QGroupBox" name="groupBox_7">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="title">
+            <string>Ảnh phía trước xe lúc ra</string>
+           </property>
+           <widget class="QLabel" name="label_anhTruocXeRa">
+            <property name="geometry">
+             <rect>
+              <x>100</x>
+              <y>20</y>
+              <width>331</width>
+              <height>251</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_8">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="title">
+            <string>Ảnh phía sau xe lúc ra</string>
+           </property>
+           <widget class="QLabel" name="label_anhSauXeRa">
+            <property name="geometry">
+             <rect>
+              <x>100</x>
+              <y>20</y>
+              <width>331</width>
+              <height>251</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_9">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="title">
+            <string>Điều khiển</string>
+           </property>
+           <widget class="QPushButton" name="btn_openCamQR">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>30</y>
+              <width>131</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Mở Camera QR</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="btn_closeCamQR">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>100</y>
+              <width>131</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Tắt Ứng Dụng</string>
+            </property>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1700</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1700</width>
+    <height>950</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>dangky</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>10</y>
+      <width>1591</width>
+      <height>881</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout" stretch="1,4,4,4">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="title">
+        <string>Điều hướng</string>
+       </property>
+       <widget class="QPushButton" name="btn_quanLy">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>20</y>
+          <width>151</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Quản lý giữ xe</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="groupBox_user">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="title">
+        <string>Thông tin người dùng</string>
+       </property>
+       <widget class="QWidget" name="formLayoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>870</x>
+          <y>10</y>
+          <width>471</width>
+          <height>241</height>
+         </rect>
+        </property>
+        <layout class="QFormLayout" name="formLayout">
+         <item row="0" column="0">
+          <widget class="QLabel" name="hTNLabel">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Họ tên</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="input_hoTen">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="mSLabel">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Mã số </string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="input_maSo">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="sINThoILabel">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Số điện thoại</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="input_phone">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="inputMask">
+            <string>0000-000-000</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="emailLabel">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Email</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLineEdit" name="input_email">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="ngYNgKLabel">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Ngày đăng ký</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QDateEdit" name="input_ngayDk">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="displayFormat">
+            <string>yyyy-M-dd</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="label">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Giới tính</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QComboBox" name="input_gioiTinh">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <item>
+            <property name="text">
+             <string>Nam</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Nữ</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Khác</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QLabel" name="thIHNNgKLabel">
+           <property name="text">
+            <string>Thời hạn đăng ký</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1">
+          <widget class="QComboBox" name="input_thoiHanDK">
+           <item>
+            <property name="text">
+             <string>1 ngày</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1 tuần</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2 tuần</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>3 tuần</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1 tháng</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>6 tháng</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1 năm</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLabel" name="label_user">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>29</y>
+          <width>220</width>
+          <height>200</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../Users/Dell/Desktop/person2.jpg</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_imgUser">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>150</y>
+          <width>121</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Đăng ảnh</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_check_hoTen">
+        <property name="geometry">
+         <rect>
+          <x>1350</x>
+          <y>10</y>
+          <width>180</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_check_soDienThoai">
+        <property name="geometry">
+         <rect>
+          <x>1350</x>
+          <y>80</y>
+          <width>180</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_check_email">
+        <property name="geometry">
+         <rect>
+          <x>1350</x>
+          <y>104</y>
+          <width>180</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_check_maSo">
+        <property name="geometry">
+         <rect>
+          <x>1350</x>
+          <y>44</y>
+          <width>180</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_check_imgUser">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>100</y>
+          <width>180</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="groupBox_xe">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="title">
+        <string>Thông tin phương tiện</string>
+       </property>
+       <widget class="QWidget" name="formLayoutWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>870</x>
+          <y>30</y>
+          <width>471</width>
+          <height>241</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <layout class="QFormLayout" name="formLayout_2">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="QLabel" name="mSLabel_2">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Tên xe</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="input_tenXe">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="sINThoILabel_2">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Màu xe</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="input_mauXe">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="emailLabel_2">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Biển số</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="input_bienSo">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_4">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Loại xe</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QComboBox" name="input_loaiXe">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <item>
+            <property name="text">
+             <string>Xe máy</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Xe đạp điện</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Xe ô tô</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Xe đạp</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="sKhungLabel">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Số khung</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLineEdit" name="input_soKhung"/>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="sMYLabel">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Số máy</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QLineEdit" name="input_soMay"/>
+         </item>
+         <item row="6" column="0">
+          <widget class="QLabel" name="dungTChLabel">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Dung tích</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1">
+          <widget class="QLineEdit" name="input_dungTich"/>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLabel" name="label_xe">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>30</y>
+          <width>220</width>
+          <height>200</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../Users/Dell/Desktop/moto.jpg</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_imgXe">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>150</y>
+          <width>121</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Đăng ảnh</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_check_tenXe">
+        <property name="geometry">
+         <rect>
+          <x>1350</x>
+          <y>30</y>
+          <width>180</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_check_mauXe">
+        <property name="geometry">
+         <rect>
+          <x>1350</x>
+          <y>64</y>
+          <width>180</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_check_bienSo">
+        <property name="geometry">
+         <rect>
+          <x>1350</x>
+          <y>100</y>
+          <width>180</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_check_dungTich">
+        <property name="geometry">
+         <rect>
+          <x>1350</x>
+          <y>234</y>
+          <width>180</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_check_soMay">
+        <property name="geometry">
+         <rect>
+          <x>1350</x>
+          <y>200</y>
+          <width>180</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_check_soKhung">
+        <property name="geometry">
+         <rect>
+          <x>1350</x>
+          <y>170</y>
+          <width>180</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_check_imgXe">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>100</y>
+          <width>180</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="groupBox_3">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="title">
+        <string>Cấp mã QR</string>
+       </property>
+       <widget class="QPushButton" name="btn_luuThongTin">
+        <property name="geometry">
+         <rect>
+          <x>1180</x>
+          <y>20</y>
+          <width>161</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Lưu thông tin</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_qr">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>30</y>
+          <width>220</width>
+          <height>200</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Mã QR</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_clear_input">
+        <property name="geometry">
+         <rect>
+          <x>1180</x>
+          <y>90</y>
+          <width>161</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Clear input</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1700</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
